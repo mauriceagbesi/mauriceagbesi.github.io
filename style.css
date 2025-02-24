@@ -352,7 +352,8 @@ a:hover {
 .form-msg textarea {
   width: 600px;
   height: 150px;
-  margin-left: 10px;
+  margin-left: 140px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .form-group label {
