@@ -1,7 +1,8 @@
-/*Global styling*/
+/* Global styling */
 body {
   background-color: #0d1117;
   color: #e6edf3;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -10,8 +11,9 @@ h1 {
   font-weight: bolder;
   font-size: xx-large;
   color: #00b4d8;
-  margin-left: -20px;
+  margin-left: 0;
 }
+
 h2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: lighter;
@@ -19,6 +21,7 @@ h2 {
   opacity: 70%;
   color: #00b4d8;
 }
+
 h3 {
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
@@ -59,11 +62,10 @@ a:hover {
 .navbar {
   position: fixed;
   top: 0;
-  padding: 16px;
+  left: 0;
   width: 100%;
   z-index: 1000;
   background-color: #161b22;
-  transition: background-color 0.8s ease-in-out;
 }
 
 #navbarNav {
@@ -491,24 +493,23 @@ a:hover {
 /* navbar togger*/
 
 .navbar-toggler {
-  border: 2px solid #00b4d8; /* Change color to match your theme */
-  border-radius: 5px; /* Optional: Adjust to round the corners */
-  padding: 5px; /* Ensures spacing around the icon */
+  border: 2px solid #00b4d8;
+  border-radius: 5px;
+  padding: 8px;
 }
 
 .navbar-toggler-icon {
-  filter: invert(1); /* Ensures visibility on dark backgrounds */
+  filter: invert(1);
+  width: 30px;
+  height: 30px;
 }
-
+/*Navbar toggler ends*/
 
 
 /* Responsive Media Queries */
-
-/* Extra small devices (phones, less than 576px) */
 @media (max-width: 575.98px) {
   h1 {
     font-size: large;
-    margin-left: 0;
   }
   h2 {
     font-size: medium;
@@ -523,10 +524,7 @@ a:hover {
     width: 90%;
     height: auto;
   }
-  .form-group input {
-    width: 100%;
-  }
-  .form-msg textarea {
+  .form-group input, .form-msg textarea {
     width: 100%;
   }
   .form button {
@@ -534,16 +532,11 @@ a:hover {
     display: block;
     width: 100%;
   }
-  .navbar-nav .nav-item {
-    margin-right: 20px;
-  }
 }
 
-/* Small devices (tablets, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   h1 {
     font-size: x-large;
-    margin-left: 0;
   }
   .home h2 {
     font-size: 48px;
@@ -553,34 +546,24 @@ a:hover {
   }
   .form {
     width: 85%;
-    height: auto;
   }
-  .form-group input {
-    width: 100%;
-  }
-  .form-msg textarea {
+  .form-group input, .form-msg textarea {
     width: 100%;
   }
 }
 
-/* Medium devices (desktops, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .navbar-nav .nav-item {
-    margin-right: 30px;
-  }
   .form {
     width: 75%;
   }
 }
 
-/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .navbar-nav .nav-item {
     margin-right: 40px;
   }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .navbar-nav .nav-item {
     margin-right: 50px;
