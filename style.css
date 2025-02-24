@@ -92,6 +92,10 @@ a:hover {
   color: #e6edf3;
   background-color: #00b4d8;
 }
+.navbar-collapse {
+  display: block !important; /* Ensure it appears */
+}
+
 
 /* Navbar ends*/
 
