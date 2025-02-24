@@ -1,8 +1,7 @@
-/* Global styling */
+/*Global styling*/
 body {
   background-color: #0d1117;
   color: #e6edf3;
-  overflow-x: hidden;
 }
 
 h1 {
@@ -11,9 +10,8 @@ h1 {
   font-weight: bolder;
   font-size: xx-large;
   color: #00b4d8;
-  margin-left: 0;
+  margin-left: -20px;
 }
-
 h2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: lighter;
@@ -21,7 +19,6 @@ h2 {
   opacity: 70%;
   color: #00b4d8;
 }
-
 h3 {
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
@@ -62,10 +59,11 @@ a:hover {
 .navbar {
   position: fixed;
   top: 0;
-  left: 0;
+  padding: 16px;
   width: 100%;
   z-index: 1000;
   background-color: #161b22;
+  transition: background-color 0.8s ease-in-out;
 }
 
 #navbarNav {
@@ -75,7 +73,6 @@ a:hover {
 .navbar-nav .nav-item {
   margin-right: 50px; /* Adjust spacing */
 }
-
 
 .navbar-nav .nav-link {
   display: flex;
@@ -94,10 +91,6 @@ a:hover {
   color: #e6edf3;
   background-color: #00b4d8;
 }
-.navbar-collapse {
-  display: block !important; /* Ensure it appears */
-}
-
 
 /* Navbar ends*/
 
@@ -183,7 +176,7 @@ a:hover {
   z-index: 10;
   opacity: 60%;
 }
-.text-start a{  
+.text-start a {
   opacity: 80%;
   font-style: italic;
 }
@@ -348,10 +341,10 @@ a:hover {
   align-items: center;
   display: flex;
 }
-.form-msg label{
+.form-msg label {
   margin-left: 60px;
   color: #00b4d8;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: x-large;
   font-style: italic;
 }
@@ -364,7 +357,7 @@ a:hover {
 .form-group label {
   text-align: right;
   color: #00b4d8;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: x-large;
   font-style: italic;
 }
@@ -372,7 +365,7 @@ a:hover {
 .form-group input {
   width: 300px;
 }
-.form button{
+.form button {
   margin-left: 400px;
   border-radius: 10px;
 }
@@ -390,8 +383,6 @@ a:hover {
   text-align: center;
   display: flex;
 }
-
-
 
 .footer p {
   font-size: 16px;
@@ -480,7 +471,6 @@ a:hover {
   z-index: 1000;
 }
 
-
 .back-to-top i {
   font-size: 24px;
 }
@@ -489,86 +479,4 @@ a:hover {
   background-color: #0077a8;
   transform: scale(1.1); /* Slight zoom effect */
 }
-
-/* navbar togger*/
-
-.navbar-toggler {
-  border: 2px solid #00b4d8;
-  border-radius: 5px;
-  padding: 8px;
-}
-
-.navbar-toggler-icon {
-  filter: invert(1);
-  width: 30px;
-  height: 30px;
-}
-/*Navbar toggler ends*/
-
-
-/* Responsive Media Queries */
-@media (max-width: 575.98px) {
-  h1 {
-    font-size: large;
-  }
-  h2 {
-    font-size: medium;
-  }
-  .home h2 {
-    font-size: 40px;
-  }
-  .home p {
-    font-size: 18px;
-  }
-  .form {
-    width: 90%;
-    height: auto;
-  }
-  .form-group input, .form-msg textarea {
-    width: 100%;
-  }
-  .form button {
-    margin-left: auto;
-    display: block;
-    width: 100%;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  h1 {
-    font-size: x-large;
-  }
-  .home h2 {
-    font-size: 48px;
-  }
-  .home p {
-    font-size: 20px;
-  }
-  .form {
-    width: 85%;
-  }
-  .form-group input, .form-msg textarea {
-    width: 100%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .form {
-    width: 75%;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .navbar-nav .nav-item {
-    margin-right: 40px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .navbar-nav .nav-item {
-    margin-right: 50px;
-  }
-}
-
-
 
