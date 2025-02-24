@@ -92,10 +92,7 @@ a:hover {
   color: #e6edf3;
   background-color: #00b4d8;
 }
-/* Navbar Toggle Button (Hamburger Menu) */
-.navbar-toggler {
-  border: 1px solid #00b4d8; /* Border color */
-}
+
 /* Navbar ends*/
 
 /*--------------------------------------------------------------
@@ -487,109 +484,104 @@ a:hover {
   transform: scale(1.1); /* Slight zoom effect */
 }
 
+/* navbar togger*/
+
+.navbar-toggler {
+  border: 2px solid #00b4d8; /* Change color to match your theme */
+  border-radius: 5px; /* Optional: Adjust to round the corners */
+  padding: 5px; /* Ensures spacing around the icon */
+}
+
+.navbar-toggler-icon {
+  filter: invert(1); /* Ensures visibility on dark backgrounds */
+}
 
 
-/* Media Queries */
-/* Mobile Devices (up to 767px) */
-@media (max-width: 767px) {
+
+/* Responsive Media Queries */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
   h1 {
-    font-size: x-large;
+    font-size: large;
     margin-left: 0;
   }
-
   h2 {
-    font-size: 24px;
+    font-size: medium;
   }
-
-  h3 {
-    font-size: xx-large;
-  }
-
   .home h2 {
-    font-size: 36px;
+    font-size: 40px;
   }
-
   .home p {
     font-size: 18px;
   }
-
-  .navbar-nav .nav-item {
-    margin-right: 20px;
-  }
-
-  .navbar-nav .nav-link {
-    font-size: medium;
-  }
-
   .form {
     width: 90%;
     height: auto;
   }
-
-  .form-group {
-    flex-direction: column;
-    margin-left: 0;
+  .form-group input {
+    width: 100%;
   }
-
   .form-msg textarea {
     width: 100%;
-    margin-left: 0;
   }
-
   .form button {
-    margin-left: 0;
+    margin-left: auto;
+    display: block;
     width: 100%;
   }
-
-  .footer {
-    flex-direction: column;
-  }
-
-  .info-item {
-    margin-left: 0;
+  .navbar-nav .nav-item {
+    margin-right: 20px;
   }
 }
 
-/* Tablet Devices (768px to 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
   h1 {
-    font-size: xx-large;
+    font-size: x-large;
+    margin-left: 0;
   }
-
-  h2 {
-    font-size: 28px;
-  }
-
-  h3 {
-    font-size: xxx-large;
-  }
-
   .home h2 {
     font-size: 48px;
   }
-
   .home p {
-    font-size: 22px;
+    font-size: 20px;
   }
-
   .form {
-    width: 80%;
+    width: 85%;
+    height: auto;
   }
-
-  .form-group {
-    margin-left: 30px;
+  .form-group input {
+    width: 100%;
   }
-
   .form-msg textarea {
-    width: 80%;
-  }
-
-  .form button {
-    margin-left: 30%;
+    width: 100%;
   }
 }
 
-/* Desktop Devices (1024px and above) */
-@media (min-width: 1024px) {
-  /* No changes needed for desktop as it uses the default styles */
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navbar-nav .nav-item {
+    margin-right: 30px;
+  }
+  .form {
+    width: 75%;
+  }
 }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .navbar-nav .nav-item {
+    margin-right: 40px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .navbar-nav .nav-item {
+    margin-right: 50px;
+  }
+}
+
+
+
