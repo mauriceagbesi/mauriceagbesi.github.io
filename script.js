@@ -40,3 +40,23 @@ document.getElementById("myVideo").playbackRate = 4; // Plays at 2x speed
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+
+// Disabling ctrl + u
+ document.addEventListener("contextmenu", function(event) {
+        event.preventDefault(); // Disable right-click
+    });
+
+    document.addEventListener("keydown", function(event) {
+        if (event.ctrlKey && (event.key === "u" || event.key === "U" || event.key === "s" || event.key === "S")) {
+            event.preventDefault(); // Disable Ctrl + U (View Source) and Ctrl + S (Save Page)
+            alert("Viewing source is disabled!");
+        }
+        if (event.ctrlKey && event.shiftKey && (event.key === "i" || event.key === "I")) {
+            event.preventDefault(); // Disable Ctrl + Shift + I (DevTools)
+            alert("Developer tools are disabled!");
+        }
+        if (event.key === "F12") {
+            event.preventDefault(); // Disable F12 (DevTools)
+            alert("Developer tools are disabled!");
+        }
+    });
